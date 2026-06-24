@@ -1,0 +1,105 @@
+{% schema %}
+{
+  "name": "Testimonials",
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author name"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Location"
+        }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Testimonials" }]
+}
+{% endschema %}
+
+<section class="testimonials">
+  <h2 class="testimonials__heading">What They're Saying</h2>
+  <div class="testimonials__grid">
+    {% for block in section.blocks %}
+      <div class="testimonials__card" {{ block.shopify_attributes }}>
+        <p class="testimonials__quote">"{{ block.settings.quote }}"</p>
+        <span class="testimonials__author">
+          {{ block.settings.author }}
+          {% if block.settings.location != blank %}
+            <span class="testimonials__location">· {{ block.settings.location }}</span>
+          {% endif %}
+        </span>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% stylesheet %}
+  .testimonials {
+    padding: 6rem 4rem;
+    background: #111111;
+    text-align: center;
+  }
+
+  .testimonials__heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    color: #f5f0e8;
+    margin-bottom: 3rem;
+    font-weight: 400;
+  }
+
+  .testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .testimonials__card {
+    border: 0.5px solid #2a2a2a;
+    padding: 2.5rem 2rem;
+    background: #0a0a0a;
+  }
+
+  .testimonials__quote {
+    font-size: 1rem;
+    color: #a09a8e;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+
+  .testimonials__author {
+    font-size: 0.8rem;
+    color: #c9a84c;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .testimonials__location {
+    color: #555550;
+  }
+
+  @media (max-width: 768px) {
+    .testimonials {
+      padding: 3rem 1.5rem;
+    }
+    .testimonials__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+{% endstylesheet %}
