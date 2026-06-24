@@ -1,1 +1,197 @@
-{"sections":{"image_banner":{"type":"image-banner","blocks":{"text_aLqV8c":{"type":"text","name":"Subheading","settings":{"text":"Luxury fragrances crafted for those who move in silence.","text_style":"subtitle"}},"heading":{"type":"heading","settings":{"heading":"Wear the Dark.","heading_size":"h0"}},"button":{"type":"buttons","settings":{"button_label_1":"Shop Now","button_link_1":"shopify:\/\/collections","button_style_secondary_1":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["text_aLqV8c","heading","button"],"settings":{"image":"shopify:\/\/shop_images\/Hero_Banner.png","image_overlay_opacity":60,"image_height":"large","image_behavior":"none","desktop_content_position":"bottom-center","desktop_content_alignment":"center","show_text_box":false,"color_scheme":"scheme-3","stack_images_on_mobile":false,"mobile_content_alignment":"center","show_text_below":false}},"featured_collection":{"type":"featured-collection","settings":{"collection":"all","products_to_show":4,"title":"Bestsellers","heading_size":"h0","description":"","show_description":false,"description_style":"body","columns_desktop":4,"enable_desktop_slider":false,"full_width":true,"show_view_all":true,"view_all_style":"solid","color_scheme":"scheme-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":true,"show_rating":false,"quick_add":"standard","columns_mobile":"1","swipe_on_mobile":false,"padding_top":44,"padding_bottom":36}}},"order":["image_banner","featured_collection"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "text_aLqV8c": {
+          "type": "text",
+          "name": "Subheading",
+          "settings": {
+            "text": "Luxury fragrances crafted for those who move in silence.",
+            "text_style": "subtitle"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wear the Dark.",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify://collections",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_aLqV8c",
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Hero_Banner.png",
+        "image_overlay_opacity": 60,
+        "image_height": "large",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "all",
+        "products_to_show": 4,
+        "title": "Bestsellers",
+        "heading_size": "h0",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "blob",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "scent_story_xnGLVp": {
+      "type": "scent-story",
+      "name": "Scent Story",
+      "settings": {
+        "heading": "Born from Darkness.",
+        "subtext": "Every bottle is a chapter. Every scent, a confession. Noir Parfum was built for those who wear their story on their skin.",
+        "button_label": "Explore Our Bestsellers",
+        "button_link": "shopify://collections/bestsellers"
+      }
+    },
+    "testimonials_qQi9hK": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_4AUwTk": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Cedar & Smoke is exactly what I was looking for. Dark, woody, zero sweetness. Most brands get this wrong. Noir Parfum doesn't.",
+            "author": "Rohan M.",
+            "location": "Bangalore"
+          }
+        },
+        "testimonial_BkikVy": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Rose Elixir is the most elegant thing I own. It opens floral, dries down into something warm and addictive, and somehow gets better after hour six. I've already ordered two backups.",
+            "author": "Priya K.",
+            "location": "New Delhi"
+          }
+        },
+        "testimonial_dGCkNr": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Oud Noir stopped three people in the elevator on my way to work. I've never gotten this many compliments from a single fragrance. It's the only bottle on my dresser now.",
+            "author": "Aryan S.",
+            "location": "Mumbai"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_4AUwTk",
+        "testimonial_BkikVy",
+        "testimonial_dGCkNr"
+      ],
+      "name": "Testimonials",
+      "settings": {}
+    },
+    "multicolumn_FpHaxN": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_e7zMKJ": {
+          "type": "column",
+          "settings": {
+            "title": "Long Lasting",
+            "text": "<p><br/>Every fragrance is formulated to last 10–12 hours minimum. No top-note fadeout. No compromise.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_VqLHht": {
+          "type": "column",
+          "settings": {
+            "title": "Skin Safe",
+            "text": "<p><br/>Dermatologically tested. Free from parabens, phthalates, and synthetic fixatives. Safe for daily wear.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_CWN8kT": {
+          "type": "column",
+          "settings": {
+            "title": "Crafted in Small Batches",
+            "text": "<p><br/>We produce limited runs per fragrance. When it's gone, it's gone. That's intentional.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_e7zMKJ",
+        "column_VqLHht",
+        "column_CWN8kT"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Why Noir Parfum",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "featured_collection",
+    "scent_story_xnGLVp",
+    "testimonials_qQi9hK",
+    "multicolumn_FpHaxN"
+  ]
+}
