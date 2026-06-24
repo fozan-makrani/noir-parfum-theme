@@ -1,0 +1,111 @@
+{% schema %}
+{
+  "name": "Scent Story",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Born from Darkness."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "Every bottle is a chapter. Every scent, a confession. Noir Parfum was built for those who wear their story on their skin."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Our Story"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scent Story"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="scent-story">
+  <div class="scent-story__text">
+    <h2>{{ section.settings.heading }}</h2>
+    <p>{{ section.settings.subtext }}</p>
+    {% if section.settings.button_label != blank %}
+      <a href="{{ section.settings.button_link }}" class="scent-story__btn">
+        {{ section.settings.button_label }}
+      </a>
+    {% endif %}
+  </div>
+  <div class="scent-story__image">
+    {% if section.settings.image %}
+      {{ section.settings.image | image_url: width: 800 | image_tag }}
+    {% endif %}
+  </div>
+</div>
+
+{% stylesheet %}
+  .scent-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 6rem 4rem;
+    background: #0a0a0a;
+  }
+
+  .scent-story__text h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    color: #f5f0e8;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+
+  .scent-story__text p {
+    font-size: 1rem;
+    color: #a09a8e;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .scent-story__btn {
+    display: inline-block;
+    padding: 0.85rem 2rem;
+    background: #c9a84c;
+    color: #0a0a0a;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .scent-story__image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .scent-story {
+      grid-template-columns: 1fr;
+      padding: 3rem 1.5rem;
+    }
+    .scent-story__text h2 {
+      font-size: 2.2rem;
+    }
+  }
+{% endstylesheet %}
