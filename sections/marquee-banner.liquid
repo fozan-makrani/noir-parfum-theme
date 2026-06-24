@@ -1,0 +1,71 @@
+{% schema %}
+{
+  "name": "Marquee Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Marquee text",
+      "default": "FREE SHIPPING OVER ₹999 · NEW ARRIVALS · OUD · FLORAL · WOODY · LUXURY FRAGRANCES ·"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#c9a84c"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#0a0a0a"
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "default": 18 ,
+      "min": 10,
+      "label": "Animation speed (seconds)",
+      "max": 40,
+      "step": 2
+    }
+  ],
+  "presets": [{ "name": "Marquee Banner" }]
+}
+{% endschema %}
+
+<div class="marquee-wrap" style="background-color: {{ section.settings.bg_color }};">
+  <div class="marquee-track" style="animation-duration: {{ section.settings.speed }}s;">
+    <span class="marquee-content" style="color: {{ section.settings.text_color }};">
+      {{ section.settings.text }} &nbsp;&nbsp;&nbsp;
+      {{ section.settings.text }} &nbsp;&nbsp;&nbsp;
+      {{ section.settings.text }} &nbsp;&nbsp;&nbsp;
+    </span>
+  </div>
+</div>
+
+{% stylesheet %}
+.marquee-wrap {
+  overflow: hidden;
+  padding: 0.7rem 0;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.marquee-track {
+  display: inline-block;
+  animation: marquee-scroll linear infinite;
+}
+
+.marquee-content {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.33%); }
+}
+{% endstylesheet %}
