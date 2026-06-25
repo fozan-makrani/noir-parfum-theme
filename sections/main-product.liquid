@@ -196,6 +196,12 @@
                   {%- if product.description != blank -%}
                     <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                       {{ product.description }}
+                      {% if product.metafields.custom.scent_profile != blank %}
+                        <div class="scent-profile">
+                          <h3 class="scent-profile__heading">Scent Profile</h3>
+                          <p class="scent-profile__notes">{{ product.metafields.custom.scent_profile }}</p>
+                        </div>
+                      {% endif %}
                     </div>
                   {%- endif -%}
                 {%- when 'sku' -%}

@@ -3610,3 +3610,26 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+.scent-profile {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 0.5px solid #2a2a2a;
+  background: #111111;
+}
+
+.scent-profile__heading {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #c9a84c;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.scent-profile__notes {
+  font-size: 0.9rem;
+  color: #a09a8e;
+  line-height: 1.8;
+  margin: 0;
+}
