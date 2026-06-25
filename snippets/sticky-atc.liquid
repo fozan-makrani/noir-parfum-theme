@@ -1,0 +1,23 @@
+<div class="sticky-atc" id="sticky-atc" aria-hidden="true">
+  <div class="sticky-atc__inner">
+    <div class="sticky-atc__info">
+      <span class="sticky-atc__title">{{ product.title }}</span>
+      <span class="sticky-atc__price">
+        {{ product.selected_or_first_available_variant.price | money }}
+      </span>
+    </div>
+    <button
+      class="sticky-atc__btn"
+      id="sticky-atc-btn"
+      {% if product.selected_or_first_available_variant.available == false %}
+        disabled
+      {% endif %}
+    >
+      {% if product.selected_or_first_available_variant.available %}
+        Add to Cart
+      {% else %}
+        Sold Out
+      {% endif %}
+    </button>
+  </div>
+</div>
