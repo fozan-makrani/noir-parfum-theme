@@ -22,27 +22,35 @@
             "subtext": "<p><br/>Luxury fragrances crafted for the discerning few. Each bottle holds a story.<br/></p>"
           }
         },
+        "link_list_JkFA7y": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Collections",
+            "menu": "collections"
+          }
+        },
+        "link_list_PheVtc": {
+          "type": "link_list",
+          "disabled": true,
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
         "text_i4HWMc": {
           "type": "text",
           "name": "Newsletter",
           "settings": {
             "heading": "Stay in the Noir",
-            "subtext": "<p>New arrivals, exclusive drops.</p>"
-          }
-        },
-        "link_list_ntw6c3": {
-          "type": "link_list",
-          "name": "Quick Links",
-          "settings": {
-            "heading": "Explore",
-            "menu": "main-menu"
+            "subtext": "<p>New arrivals. Private drops. Nothing else.</p>"
           }
         }
       },
       "block_order": [
         "text_B8cKnR",
-        "text_i4HWMc",
-        "link_list_ntw6c3"
+        "link_list_JkFA7y",
+        "link_list_PheVtc",
+        "text_i4HWMc"
       ],
       "settings": {
         "color_scheme": "scheme-1",
@@ -54,8 +62,8 @@
         "enable_language_selector": true,
         "payment_enable": true,
         "show_policy": true,
-        "margin_top": 0,
-        "padding_top": 16,
+        "margin_top": 8,
+        "padding_top": 8,
         "padding_bottom": 8
       }
     }

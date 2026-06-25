@@ -14,24 +14,16 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-bar-0": {
+        "announcement_iFjKhW": {
           "type": "announcement",
           "settings": {
-            "text": "✦ Free shipping on orders above ₹2999 · New arrivals: Nuit Dorée & Sillage No.1 ✦",
-            "link": ""
-          }
-        },
-        "announcement_9YxkfY": {
-          "type": "announcement",
-          "settings": {
-            "text": "✦ Handcrafted luxury · Made in small batches · 30ml · 50ml · 100ml ✦",
+            "text": "FREE SHIPPING ON ORDERS OVER ₹999 · USE CODE NOIR10 FOR 10% OFF",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "announcement_9YxkfY"
+        "announcement_iFjKhW"
       ],
       "settings": {
         "auto_rotate": false,
