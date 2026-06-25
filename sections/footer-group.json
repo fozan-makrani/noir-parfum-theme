@@ -1,1 +1,66 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer":{"type":"footer","settings":{"color_scheme":"scheme-1","newsletter_enable":true,"newsletter_heading":"Subscribe to our emails","enable_follow_on_shop":true,"show_social":true,"enable_country_selector":true,"enable_language_selector":true,"payment_enable":true,"show_policy":true,"margin_top":0,"padding_top":36,"padding_bottom":36}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text_B8cKnR": {
+          "type": "text",
+          "name": "Brand Info",
+          "settings": {
+            "heading": "Noir Parfum",
+            "subtext": "<p><br/>Luxury fragrances crafted for the discerning few. Each bottle holds a story.<br/></p>"
+          }
+        },
+        "text_i4HWMc": {
+          "type": "text",
+          "name": "Newsletter",
+          "settings": {
+            "heading": "Stay in the Noir",
+            "subtext": "<p>New arrivals, exclusive drops.</p>"
+          }
+        },
+        "link_list_ntw6c3": {
+          "type": "link_list",
+          "name": "Quick Links",
+          "settings": {
+            "heading": "Explore",
+            "menu": "main-menu"
+          }
+        }
+      },
+      "block_order": [
+        "text_B8cKnR",
+        "text_i4HWMc",
+        "link_list_ntw6c3"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 16,
+        "padding_bottom": 8
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

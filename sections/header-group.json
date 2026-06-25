@@ -17,13 +17,21 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to Noir Parfum",
+            "text": "✦ Free shipping on orders above ₹2999 · New arrivals: Nuit Dorée & Sillage No.1 ✦",
+            "link": ""
+          }
+        },
+        "announcement_9YxkfY": {
+          "type": "announcement",
+          "settings": {
+            "text": "✦ Handcrafted luxury · Made in small batches · 30ml · 50ml · 100ml ✦",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_9YxkfY"
       ],
       "settings": {
         "auto_rotate": false,
@@ -40,7 +48,7 @@
       "name": "Marquee Banner",
       "settings": {
         "text": "FREE SHIPPING OVER ₹999 · NEW ARRIVALS · OUD · FLORAL · WOODY · LUXURY FRAGRANCES ·",
-        "bg_color": "#C9A84C",
+        "bg_color": "#c9a84c",
         "text_color": "#0a0a0a",
         "speed": 18
       }
